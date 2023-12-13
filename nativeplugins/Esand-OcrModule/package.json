@@ -1,0 +1,46 @@
+{
+    "name": "Esand-OcrModule",
+    "id": "Esand-OcrModule",
+    "version": "1.2.2",
+    "description": "证件OCR",
+    "_dp_type": "nativeplugin",
+    "_dp_nativeplugin": {
+        "android": {
+            "plugins": [
+                {
+                    "type": "module",
+                    "name": "Esand-OcrModule",
+                    "class": "com.esandinfo.ocr.lib.module.EsandOcrModule"
+                }
+            ],
+            "dependencies": [
+                "com.zhy:okhttputils:2.6.2"
+            ],
+            "integrateType": "aar",
+            "minSdkVersion": 21,
+            "permissions": [
+                "android.permission.CAMERA",
+                "android.permission.FLASHLIGHT"
+            ]
+        },
+        "ios": {
+            "plugins": [
+                {
+                    "type": "module",
+                    "name": "Esand-OcrModule",
+                    "class": "EsandOcrModule"
+                }
+            ],
+            "integrateType": "framework",
+            "frameworks": [
+                "esand_ocr.framework"
+            ],
+            "resources": [
+                "esandocr.bundle"
+            ],
+            "privacies": [
+                "NSCameraUsageDescription"
+            ]
+        }
+    }
+}
