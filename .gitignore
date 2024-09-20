@@ -1,2 +1,4 @@
 unpackage/*
 .hbuilderx/*
+nativeplugins/*.zip
+
